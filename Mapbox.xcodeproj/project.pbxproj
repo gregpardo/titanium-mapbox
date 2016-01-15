@@ -30,9 +30,6 @@
 		666F64B51847B39A00BA8409 /* ComPolancomediaMapboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666F64B31847B39A00BA8409 /* ComPolancomediaMapboxView.m */; };
 		666F6DE91847BFD700BA8409 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666F6DE81847BFD700BA8409 /* CoreLocation.framework */; };
 		666F6DEB1847BFDF00BA8409 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666F6DEA1847BFDF00BA8409 /* QuartzCore.framework */; };
-		666F6DEC1847BFE800BA8409 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 666F6DE31847BF0D00BA8409 /* libMapBox.a */; };
-		666F6DEE1847BFF900BA8409 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 666F6DED1847BFF900BA8409 /* libsqlite3.dylib */; };
-		666F6DF01847C00400BA8409 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 666F6DEF1847C00400BA8409 /* libz.dylib */; };
 		666F6DF51847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 666F6DF31847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.h */; };
 		666F6DF61847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 666F6DF41847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* ComPolancomediaMapbox_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComPolancomediaMapbox_Prefix.pch */; };
@@ -81,8 +78,6 @@
 		666F6DDD1847BF0C00BA8409 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		666F6DE81847BFD700BA8409 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		666F6DEA1847BFDF00BA8409 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		666F6DED1847BFF900BA8409 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		666F6DEF1847C00400BA8409 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		666F6DF31847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComPolancomediaMapboxViewProxy.h; path = Classes/ComPolancomediaMapboxViewProxy.h; sourceTree = "<group>"; };
 		666F6DF41847EFF400BA8409 /* ComPolancomediaMapboxViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComPolancomediaMapboxViewProxy.m; path = Classes/ComPolancomediaMapboxViewProxy.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComPolancomediaMapbox_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComPolancomediaMapbox_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -95,9 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				666F6DF01847C00400BA8409 /* libz.dylib in Frameworks */,
-				666F6DEE1847BFF900BA8409 /* libsqlite3.dylib in Frameworks */,
-				666F6DEC1847BFE800BA8409 /* libMapBox.a in Frameworks */,
 				666F6DEB1847BFDF00BA8409 /* QuartzCore.framework in Frameworks */,
 				666F6DE91847BFD700BA8409 /* CoreLocation.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
@@ -130,8 +122,6 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				666F6DEF1847C00400BA8409 /* libz.dylib */,
-				666F6DED1847BFF900BA8409 /* libsqlite3.dylib */,
 				666F6DEA1847BFDF00BA8409 /* QuartzCore.framework */,
 				666F6DE81847BFD700BA8409 /* CoreLocation.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
@@ -166,8 +156,8 @@
 		666F6DDE1847BF0C00BA8409 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				666F6DE31847BF0D00BA8409 /* libMapBox.a */,
-				666F6DE51847BF0D00BA8409 /* MapBox.bundle */,
+				666F6DE31847BF0D00BA8409 /* libMapbox.a */,
+				666F6DE51847BF0D00BA8409 /* Mapbox.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,17 +235,17 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		666F6DE31847BF0D00BA8409 /* libMapBox.a */ = {
+		666F6DE31847BF0D00BA8409 /* libMapbox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libMapBox.a;
+			path = libMapbox.a;
 			remoteRef = 666F6DE21847BF0D00BA8409 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		666F6DE51847BF0D00BA8409 /* MapBox.bundle */ = {
+		666F6DE51847BF0D00BA8409 /* Mapbox.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = MapBox.bundle;
+			path = Mapbox.bundle;
 			remoteRef = 666F6DE41847BF0D00BA8409 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -309,9 +299,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/ComPolancomediaMapbox.dst;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -333,6 +325,7 @@
 					"\"$(SRCROOT)/mapbox-ios-sdk\"/**",
 				);
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/adam/Dev/git/titanium-mapbox/mapbox-ios-sdk/MapView/build/MapView.build/Release-iphoneos/MapView.build/Objects-normal/armv7",
 					"/Users/adam/Dev/git/titanium-mapbox/mapbox-ios-sdk/MapView/build/MapView.build/Release-iphoneos/MapView.build/Objects-normal/armv7s",
@@ -360,7 +353,9 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DSTROOT = /tmp/ComPolancomediaMapbox.dst;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -382,7 +377,7 @@
 					"\"$(SRCROOT)/mapbox-ios-sdk\"/**",
 				);
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/adam/Dev/git/titanium-mapbox/mapbox-ios-sdk/MapView/build/MapView.build/Release-iphoneos/MapView.build/Objects-normal/armv7",
 					"/Users/adam/Dev/git/titanium-mapbox/mapbox-ios-sdk/MapView/build/MapView.build/Release-iphoneos/MapView.build/Objects-normal/armv7s",
@@ -407,6 +402,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/ComPolancomediaMapbox.dst;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -423,7 +419,8 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -444,6 +441,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/ComPolancomediaMapbox.dst;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -460,7 +458,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComPolancomediaMapbox;
@@ -477,6 +475,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Build & test";
 			};
 			name = Debug;
@@ -488,6 +487,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Build & test";
 				ZERO_LINK = NO;
 			};
